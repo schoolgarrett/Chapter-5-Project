@@ -9,7 +9,7 @@ int main() {
     double dailyIncreaseRate;
     int numDays;
 
-    // --- 1. Input Validation ---
+    // 1. Input Validation
     // Starting population must be >= 2
     cout << "Enter the starting number of organisms (minimum of 2): ";
     while (!(cin >> startingOrganisms) || startingOrganisms < 2) {
@@ -34,7 +34,7 @@ int main() {
         cin.ignore(1000, '\n');
     }
 
-    // --- 2. Population Calculation & Output ---
+    // 2. Population Calculation & Output
     double currentPopulation = startingOrganisms;
 
     // Convert percentage to decimal (e.g., 5% becomes 0.05)
